@@ -18,13 +18,10 @@
         Const decTAX_RATE As Decimal = 0.08D
 
         Try
-            decRoomCharges = CDec(txtNights.Text)
-            CDec(txtNightlyCharge.Text)
+            decRoomCharges = CDec(txtNights.Text) * CDec(txtNightlyCharge.Text)
             lblRoomCharges.Text = decRoomCharges.ToString("c")
 
-            decAddCharges = CDec(txtRoomService.Text)
-            CDec(txtTelephone.Text)
-            CDec(txtMisc.Text)
+            decAddCharges = CDec(txtRoomService.Text) +  CDec(txtTelephone.Text) +  CDec(txtMisc.Text)
             lblAdditionalChargesOutput.Text = decAddCharges.ToString("c")
 
             decSubtotal = decRoomCharges + decAddCharges
@@ -41,9 +38,6 @@
 
 
 
-        Catch ex As Exception
-
-        End Try
 
     End Sub
 
