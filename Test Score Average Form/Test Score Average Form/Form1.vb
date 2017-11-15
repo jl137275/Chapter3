@@ -2,11 +2,8 @@
 
 
 
-    Private Sub btnCalculateRevenue_Click(sender As Object, e As EventArgs) Handles btnCalculateRevenue.Click
-        Dim total, average As Double
-        total = CDbl(txtTestScore1.Text) + CDbl(txtTestScore2.Text) + CDbl(txtTestScore3.Text) + CDbl(txtTestScore4.Text) + CDbl(txtTestScore5.Text)
-        average = total / 5
-        lblAverageResult.Text = average
+    Private Sub btnCalculateRevenue_Click(sender As Object, e As EventArgs) Handles btnCalculateAverage.Click
+        Dim dblScore1, dblScore2, dblScore3, dblAverage
 
     End Sub
 
